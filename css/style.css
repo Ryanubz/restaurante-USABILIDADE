@@ -1,0 +1,230 @@
+body{
+	font-family: Nunito, sans-serif;
+	color: #F8F8FF;
+}
+
+h1, h2, h3{
+		font-family: Asap, sans-serif;
+	color: #FFFFFF;
+}
+
+.botao{
+	color:#000000;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color:#f1f1f1;
+	font-size: .9em;
+	border-radius: 3px;
+
+}
+nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #473C8B;
+}
+
+nav > a {
+	text-decoration: none;
+	color: #F8F8FF;
+	font-weight:800;
+	font-size:32px;
+	font-family:Yellowtail, serif;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+nav ul li {
+	text-align: center;
+	width: 100%;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("../img/br.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 20px;
+}
+
+header h1 {
+	color: #FFFFFF;
+}
+
+header p {
+	margin-bottom: 2em;
+}
+
+#sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px 10px 20px 20px;
+	background-color: #473C8B;
+	color:#FFFFFF;
+}
+
+#sobre h2{
+	color: #F8F8FF;
+}
+
+#sobre p{
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
+#sobre .botao{
+	background-color: #f1f1f1;
+	color: #1c1c1c;
+}
+
+#Serviços{ 
+	font size:300px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+
+}
+
+#Serviços h2{
+	color: #FFFFFF;
+}
+#Serviços div{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 100px;	
+
+} M
+
+#Videos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+}
+
+#Videos h2{
+	margin-top: 20px;
+}
+
+#Videos img{
+	   width:100px;
+}
+
+#Contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+#Contato h2{
+	color: #000000;
+}
+
+footer{
+	text-align: center;
+	padding: 10px;
+	background-color: #473C8B;
+	color: #FFFFFF; 
+}
+
+footer a{
+	text-decoration: none;
+	color:#F8F8FF;
+}
+
+@media screen and (min-width:768px){
+	nav{
+		flex-direction: row;
+		justify-content: space-around;
+		
+	}
+	nav ul{
+		flex-direction: row;
+		width: 70%
+	}
+	header{
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+	}
+	#sobre{
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px
+	}
+	#Serviços{
+		color: white;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	#Serviços h2 {
+		color: white;
+		text-align: center;
+		width: 100%
+		
+	}
+	#Serviços div{
+		color: white;
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+	#Videos{
+		flex-direction: row;
+		flex-wrap: wrap;
+
+
+	}
+	#Videos h2{
+		width: 100%;
+		text-align: center;
+	}
+	#Videos img {
+		width: 33.3333333%;
+	}
+	#Contato{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;	
+	}
+	#Contato h2, #Contato p{
+		width: 100%;
+	}
+}
+
+
